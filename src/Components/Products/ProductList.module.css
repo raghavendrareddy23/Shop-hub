@@ -1,0 +1,62 @@
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card img {
+    /* TODO: MODULE_CARDS */
+    /* 1. Fill in the required properties. */
+    border-radius: 15px;
+    height: 350px;
+    width: 350px;
+    object-fit: fill !important;
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+  .card img:hover {
+    /* TODO: MODULE_CARDS */
+    /* 1. Fill in the required properties. */
+    filter: brightness(0.6);
+    transform: scale(1.1);
+  }
+  
+  /* Hint: Notice the position:absolute and z-index properties. */
+  /* Think about how those in relation to the existing "tile" classes. */
+  .card-body {
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: 0%;
+    left:35% ;
+    color: white;
+  }
+
+.btn {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source: var(--gradient) !important;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important;
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
