@@ -7,6 +7,7 @@ import ProductList from './Components/Products/ProductList';
 import ProductDetails from './Components/Products/ProductDetails';
 import Cart from './Components/Cart/Cart';
 import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Checkout from './Components/Checkout/Checkout';
@@ -21,13 +22,13 @@ const App = () => {
         <div className="App">
           <Header />
           <Switch>
-            {/* <Route path="/" component={HomePage} /> */}
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/products" exact component={ProductList} />
             <Route path="/products/:id" component={ProductDetails} />
             <Route path="/cart" component={Cart} />
             <Route path="/checkout" component={Checkout} />
+            <Route path="/" component={Home} />
           </Switch>
         </div>
       </CartProvider>
